@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticks In A Bloodshed</title>
+    <style>
+        body {
+            background-color: #333333;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        header img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .description {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+        .description a {
+            color: #ff3333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .description a:hover {
+            text-decoration: underline;
+        }
+        .media-section {
+            margin: 40px 0;
+            background-color: #222222;
+            padding: 20px;
+            border: 2px dashed #ff3333;
+            border-radius: 8px;
+        }
+        .instructions {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            color: #cccccc;
+        }
+        .instructions input {
+            background: #444;
+            color: #fff;
+            border: 1px solid #666;
+            padding: 5px;
+            width: 80%;
+            text-align: center;
+            font-family: monospace;
+            margin-top: 5px;
+        }
+        video {
+            max-width: 100%;
+            border: 1px solid #555;
+        }
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            font-size: 0.9rem;
+            color: #aaaaaa;
+        }
+        footer a {
+            color: #ff3333;
+        }
+    </style>
+    <!-- Script do Ruffle para rodar o arquivo SWF automaticamente no navegador -->
+    <script src="https://unpkg.com"></script>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Topo com a imagem -->
+        <header>
+            <img src="foto.png" alt="Sticks In A Bloodshed Banner">
+        </header>
+
+        <!-- Descrição traduzida para o inglês -->
+        <div class="description">
+            Stupid and comical violence with stickmans. <br>
+            Website inspired by <a href="https://stickdeath.nekoweb.org/home.html" target="_blank">https://stickdeath.nekoweb.org/home.html</a>
+        </div>
+
+        <!-- Seção da Animação em Flash (SWF) -->
+        <div class="media-section">
+            <h2>Teh Skater (Flash Version)</h2>
+            <!-- O Ruffle vai tentar converter este embed automaticamente -->
+            <embed src="teh skater.swf" width="640" height="480">
+        </div>
+
+        <!-- Seção do Vídeo MP4 -->
+        <div class="media-section">
+            <div class="instructions">
+                Don't have the Ruffle extension? Download it here:
+                <br>
+                <input type="text" value="https://chromewebstore.google.com/detail/ruffle-flash-emulator/donbcfbmhbcapadipfkeojnmajbakjdc?pli=1" readonly onclick="this.select();">
+                <br><br>
+                OR watch the animation in MP4:
+            </div>
+            
+            <video controls>
+                <source src="teh skater.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Rodapé traduzida para o inglês -->
+        <footer>
+            <p>Don't like the website? Your problem! LOL just kidding. Contact me with your reviews: <a href="mailto:sticksinabloodshed@gmail.com">sticksinabloodshed@gmail.com</a></p>
+        </footer>
+    </div>
+
+</body>
+</html>
